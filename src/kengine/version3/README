@@ -1,0 +1,6 @@
+Version 3.0 README:
+===================
+
+Changes from version 2.0 include:
+
+1/ Implement and unit test the WordTable using Doc and canon

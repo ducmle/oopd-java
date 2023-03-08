@@ -1,0 +1,7 @@
+Version 4.0 README:
+===================
+
+Changes from version 3.0 include:
+
+1/ Implement Query and DocCnt 
+2/ Can run the full engine logic

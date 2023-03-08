@@ -1,0 +1,12 @@
+Derived relations:
+=================
+1/ The sumFreq for a match is the total count of occurrences of all keywords 
+    in that document
+2/ The frequency of an entry is the count of occurrences of a keyword in 
+    a given document
+
+Constraints:
+============
+1/ A document matches a query if it contains all the query keywords
+2/ QueryResult contains exactly the documents that match a query
+3/ Matches in QueryResult are ordered by sumFreq  

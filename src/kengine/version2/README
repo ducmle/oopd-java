@@ -1,0 +1,12 @@
+Version 2.0 README:
+===================
+
+Changes from version 1.0 include:
+
+1/ Implement and unit test the canon procedure.
+2/ Implement TitleTable and unit test it using Doc and canon. This allows us 
+to test searches based on titles
+
+All the classes from version 1.0 that are not affected by the above changes are kept in the 
+version 1.0 package.
+

@@ -1,0 +1,9 @@
+archives
+
+docs
+src.demo
+src.exercise
+
+*.zip
+
+*.class

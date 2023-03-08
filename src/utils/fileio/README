@@ -1,0 +1,5 @@
+The following code shows how to use ch14.fileio.FileHandler class to read the content of a text file into a String object. In the code, Xref is a class that is located in the parent folder of the data folder. The data folder contains a file named compiler.txt:
+
+String path = Xref.class.getResource("data/compiler.txt").getPath();
+String fileContent = FileHandler.getFile(path);
+// process file content
