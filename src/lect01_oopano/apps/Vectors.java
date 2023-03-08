@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class Vectors {
   public static void main(String[] args) {
-    Vector v = new Vector(); // creates a new empty Vector
+    Vector<String> v = new Vector<>(); // creates a new empty Vector
     
     // adds an element to the end
     v.add("abc");  // first element at index 0
