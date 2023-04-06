@@ -56,11 +56,13 @@ public class Car extends Vehicle {
    *  else
    *    print error message
    */
-  public void setOwner(String owner) {
+  public boolean setOwner(String owner) {
     if (validateOwner(owner)) {
       this.owner = owner;
+      return true;
     } else {
       System.err.println("Car.setOwner: owner is not valid " + owner);
+      return false;
     }
   }
 

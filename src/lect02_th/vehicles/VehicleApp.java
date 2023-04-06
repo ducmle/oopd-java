@@ -12,7 +12,7 @@ public class VehicleApp {
       // create objects
       Vehicle v;
       try {
-        v = new Bus("b1",3.0,3.0,10.0,6000,40);
+        v = new Bus("b1",3,3.0,10.0,5000,40);
         // use objects
         System.out.println(v + ": \n" + v.getName() + 
             ", weight: " + v.calcTotalWeight());

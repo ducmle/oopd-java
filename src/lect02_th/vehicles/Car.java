@@ -47,7 +47,7 @@ public class Car extends Vehicle {
    *              return false</pre>
    */
   @Override
-  @DomainConstraint(type="Double",min=MAX_WEIGHT,optional=false)
+  @DomainConstraint(type="Double",max=MAX_WEIGHT,optional=false)
   protected boolean validateWeight(double w) {
     if (!(super.validateWeight(w)))
       return false;
@@ -66,7 +66,7 @@ public class Car extends Vehicle {
    *              return false</pre>
    */
   @Override
-  @DomainConstraint(type="Integer",min=MAX_SEATCAP,optional=false)
+  @DomainConstraint(type="Integer",max=MAX_SEATCAP,optional=false)
   protected boolean validateSeatingCapacity(int c) {
     if (!(super.validateSeatingCapacity(c)))
       return false;

@@ -13,7 +13,7 @@ import utils.NotPossibleException;
  *           a capacity as high as 300 passengers and are widely used for public
  *           transportation.
  * @attributes
- *  routes Integer[]
+ *  routes Integer[]  int[]
  * @abstract_properties
  *    P_Vehicle /\ 
  *    min(weight)=5000 /\

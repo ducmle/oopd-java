@@ -13,11 +13,11 @@ import utils.OptType;
  *           cargo over land, water, air, or through space.
  * @attributes
  *  name    String
- *  width   Double
- *  height  Double
- *  length  Double
- *  weight  Double
- *  seatingCapacity Integer
+ *  width   Double    double
+ *  height  Double    double
+ *  length  Double    double
+ *  weight  Double    double
+ *  seatingCapacity Integer int
  * @object
  *  A typical Vehicle is <pre>v = < n,d,h,l,w,c ></pre>, where
  *    <pre>name(n), width(d), height(h), length(l), weight(w), seatingCapacity(c)</pre>
@@ -100,15 +100,18 @@ public class Vehicle {
    * @effects <pre>
    *            if name is valid
    *              set this.name = name
+   *              return true
    *            else
-   *              throws NotPossibleException</pre>
+   *              return false</pre>
    */
   @DOpt(type=OptType.Mutator) @AttrRef("name")
-  public void setName(String name) throws NotPossibleException {
-    if (validateName(name))
+  public boolean setName(String name) {
+    if (validateName(name)) {
       this.name = name;
-    else
-      throw new NotPossibleException("Vehicle.setName: invalid name: " + name);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -123,15 +126,18 @@ public class Vehicle {
    * @effects <pre>
    *            if width is valid
    *              set this.width = width
+   *              return true
    *            else 
-   *              throws NotPossibleException</pre>
+   *              return false</pre>
    */
   @DOpt(type=OptType.Mutator) @AttrRef("width")
-  public void setWidth(double width) throws NotPossibleException {
-    if (validateDimension(width))
+  public boolean setWidth(double width) {
+    if (validateDimension(width)) {
       this.width = width;
-    else
-      throw new NotPossibleException("Vehicle.setWidth: invalid width " + width);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -146,15 +152,18 @@ public class Vehicle {
    * @effects <pre>
    *            if height is valid
    *              set this.height = height
+   *              return true
    *            else 
-   *              throws NotPossibleException</pre>
+   *              return false
    */
   @DOpt(type=OptType.Mutator) @AttrRef("height")
-  public void setHeight(double height) throws NotPossibleException {
-    if (validateDimension(height))
+  public boolean setHeight(double height) {
+    if (validateDimension(height)) {
       this.height = height;
-    else
-      throw new NotPossibleException("Vehicle.setHeight: invalid height: " + height);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -169,15 +178,18 @@ public class Vehicle {
    * @effects <pre>
    *            if length is valid
    *              set this.length = length
+   *              return true
    *            else
-   *              throws NotPossibleException</pre>
+   *              return false</pre> 
    */
   @DOpt(type=OptType.Mutator) @AttrRef("length")
-  public void setLength(double length) throws NotPossibleException {
-    if (validateDimension(length))
+  public boolean setLength(double length) {
+    if (validateDimension(length)) {
       this.length = length;
-    else
-      throw new NotPossibleException("Vehicle.setLength: invalid length " + length);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -192,15 +204,18 @@ public class Vehicle {
    * @effects <pre>
    *            if weight is valid
    *              set this.weight = weight
+   *              return true
    *            else 
-   *              throws NotPossibleException</pre>
+   *              return false</pre>
    */
   @DOpt(type=OptType.Mutator) @AttrRef("weight")
-  public void setWeight(double weight) throws NotPossibleException {
-    if (validateWeight(weight))
+  public boolean setWeight(double weight) {
+    if (validateWeight(weight)) {
       this.weight = weight;
-    else
-      throw new NotPossibleException("Vehicle.setWeight: invalid weight: " + weight);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
@@ -215,15 +230,18 @@ public class Vehicle {
    * @effects <pre>
    *            if seatingCapacity is valid
    *              sets this.seatingCapacity = seatingCapacity
+   *              return true
    *            else 
-   *              throws NotPossibleException</pre>
+   *              return false</pre>
    */
   @DOpt(type=OptType.Mutator) @AttrRef("seatingCapacity")
-  public void setSeatingCapacity(int seatingCapacity) throws NotPossibleException {
-    if (validateSeatingCapacity(seatingCapacity))
+  public boolean setSeatingCapacity(int seatingCapacity) {
+    if (validateSeatingCapacity(seatingCapacity)) {
       this.seatingCapacity = seatingCapacity;
-    else
-      throw new NotPossibleException("Vechile.setSeatingCapacity: invalid seating " + seatingCapacity);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**

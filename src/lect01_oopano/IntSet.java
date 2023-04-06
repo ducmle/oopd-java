@@ -66,6 +66,11 @@ public class IntSet implements Collection {
     int i = getIndex(x);
     if (i < 0)  // x not in this
       return;
+    
+    // short-form:
+    // elements.remove(i);
+    
+    
     // change element at position ith (which is x)
     elements.set(i, elements.lastElement());
     // uses Vector.remove(int index)
@@ -141,7 +146,8 @@ public class IntSet implements Collection {
   public String toString() {
     if (size() == 0)
       return "IntSet:{ }";
-
+    
+    // todo: better to use StringBuilder
     String s = "IntSet:{" + elements.elementAt(0);
     for (int i = 1; i < size(); i++) {
       s = s + " , " + elements.elementAt(i);

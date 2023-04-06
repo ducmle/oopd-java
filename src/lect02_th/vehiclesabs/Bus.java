@@ -74,6 +74,7 @@ public class Bus extends Vehicle {
   /**
    * @effects <pre>return super.compareByName(o)</pre> 
    */
+  @Override
   public int compareTo(Object o) 
     throws NullPointerException, ClassCastException {
     // compare two bus objects by name
