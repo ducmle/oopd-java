@@ -2,6 +2,7 @@ package kengine.version1;
 
 import java.util.Vector;
 
+import kengine.Doc;
 import utils.DuplicateException;
 import utils.NotPossibleException;
 

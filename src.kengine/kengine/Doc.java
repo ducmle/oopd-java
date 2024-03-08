@@ -104,6 +104,7 @@ public class Doc {
    *          This implementation also parses the Javascript text that is
    *          contained between the <code>&lt;script&gt;&lt;/script&gt;</code>
    *          tags.
+   * @version 3.0
    */
   public Iterator words() {
     // extracts body

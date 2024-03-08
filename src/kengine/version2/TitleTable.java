@@ -2,7 +2,7 @@ package kengine.version2;
 
 import java.util.Hashtable;
 
-import kengine.version1.Doc;
+import kengine.Doc;
 import utils.DuplicateException;
 import utils.NotPossibleException;
 

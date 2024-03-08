@@ -7,9 +7,9 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Vector;
 
-import kengine.version1.Comm;
-import kengine.version1.Doc;
-import kengine.version1.Query;
+import kengine.Comm;
+import kengine.Doc;
+import kengine.Query;
 import kengine.version2.TitleTable;
 import utils.NotPossibleException;
 

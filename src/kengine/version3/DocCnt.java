@@ -1,6 +1,6 @@
 package kengine.version3;
 
-import kengine.version1.Doc;
+import kengine.Doc;
 
 /**
  * @overview A record <code><Doc,cnt></code> where <code>Doc</code> is a document object

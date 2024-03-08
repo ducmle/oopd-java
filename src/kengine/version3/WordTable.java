@@ -10,7 +10,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Vector;
 
-import kengine.version1.Doc;
+import kengine.Doc;
 import kengine.version2.Helpers;
 import utils.NotPossibleException;
 

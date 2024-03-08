@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 
+import kengine.version1.Doc;
+import kengine.version1.DocGenerator;
 import utils.NotPossibleException;
 
 /**

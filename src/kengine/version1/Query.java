@@ -3,6 +3,8 @@ package kengine.version1;
 import java.util.Hashtable;
 import java.util.Vector;
 
+import kengine.Doc;
+import kengine.WordTable;
 import utils.NotImplementedException;
 import utils.NotPossibleException;
 

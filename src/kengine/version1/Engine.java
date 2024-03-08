@@ -4,6 +4,11 @@ import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Vector;
 
+import kengine.Comm;
+import kengine.Doc;
+import kengine.Query;
+import kengine.TitleTable;
+import kengine.WordTable;
 import utils.NotPossibleException;
 
 
